@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Ejercicio 3</title>
+</head>
+<!--3. Los tramos impositivos para la declaración de la renta 
+en un determinado país son los siguientes:
+Renta 	Tipo impositivo
+Menos de 10000€ 	5%
+Entre 10000€ y 20000€ 	15%
+Entre 20000€ y 35000€ 	20%
+Entre 35000€ y 60000€ 	30%
+Más de 60000€ 	45%
+Escribir un programa que pregunte al usuario su renta anual y 
+muestre por pantalla el tipo impositivo que le corresponde.-->
+<body>
+	<script type="text/javascript">
+		var renta = parseFloat(prompt('Introduzca su renta anual '));
+		if (renta < 10000) {
+			let resultado=renta*0.05;
+			document.write('Tipo impositivo: 5% <br> Usted debe pagar ', resultado);
+		}else if (renta >= 10000 && renta<20000) {
+			let resultado=renta*0.15;
+			document.write('Tipo impositivo: 15% <br> Usted debe pagar ', resultado);
+		}else if (renta >= 20000 && renta<35000) {
+			let resultado=renta*0.2;
+			document.write('Tipo impositivo: 20% <br> Usted debe pagar ', resultado);
+		}else if (renta >= 35000 && renta<60000) {
+			let resultado=renta*0.3;
+			document.write('Tipo impositivo: 30% <br> Usted debe pagar ', resultado);
+		}else{
+			let resultado=renta*0.45;
+			document.write('Tipo impositivo: 45% <br> Usted debe pagar ', resultado);
+		}
+	</script>
+</body>
+</html>
+
+
+
+

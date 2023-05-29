@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Ejercicio3.1</title>
+</head>
+<!--1. Crear una función inversa que calcule la 
+	inversión de una cadena y lo retorne. Por ejemplo, 
+	la cadena «Hola Mundo» debería retornar la cadena «odnum aloh» 
+	(retornar todo el String en minúsculas).-->
+<body>
+	<script type="text/javascript">
+		var cadena=prompt('Introduce una frase');
+		inversa(cadena);
+
+		function inversa(cadena) {
+			var invercad = "";
+			for (var i=cadena.length-1; i >= 0; i--) {
+				invercad += cadena[i].toLowerCase();
+			}
+			alert(invercad);
+		}
+	</script>
+</body>
+</html>

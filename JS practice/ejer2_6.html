@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Ejercicio 1.6</title>
+</head>
+<!--6. Sumar los dígitos de un número e 
+	imprimir en la consola.-->
+<body>
+	<script type="text/javascript">
+		var num = prompt('Introduce un número');
+		var numeros = num.split('');
+		var suma = 0;
+		for (var i = 0; i < numeros.length; i++) {
+			suma += parseInt(numeros[i]);
+		}
+		console.log(suma);
+	</script>
+</body>
+</html>

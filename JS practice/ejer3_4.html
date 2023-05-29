@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Ejercicio 3.4</title>
+</head>
+<!--4. Crea un menu con las opciones anteriores,
+ adicionando la opción salir (4. Salir) y que genere un
+  mensaje de error en caso que elija una opción incorrecta.-->
+<body>
+	<script type="text/javascript">
+		var opcion=prompt('Introduzca la función que desea realizar: \n 1. Inversa \n 2. Calcular Area \n 3. Valida Contraseña \n 4. Salir');
+
+		while(opcion!= 4){
+			if (opcion==1) {
+				var cadena=prompt('Introduce una frase');
+				inversa(cadena);
+
+				function inversa(cadena) {
+					var invercad = "";
+					for (var i=cadena.length-1; i >= 0; i--) {
+					invercad += cadena[i].toLowerCase();
+					}
+					alert(invercad);
+				}
+			}else if (opcion==2) {
+				var base=parseFloat(prompt('Cuál es la base? '));
+				var altura=parseFloat(prompt('Cuál es la altura '));
+				calcularArea(base, altura);
+				function calcularArea(x1, x2){
+					let resultado=x1*x2;
+					alert(resultado);
+				}
+			}else if (opcion==3) {
+				var contr=prompt('Introduzca nueva contraseña');
+				alert(valContr(contr));
+
+				function valContr(x){
+			 		if (x.length<8) {
+			 		return false;
+			 		}else{
+			 		return true
+			 		}
+				}
+			}else{
+				alert('Escoja una opción de las anteriores')
+			}
+			opcion=prompt('Introduzca la función que desea realizar: \n 1. Inversa \n 2. Calcular Area \n 3. Valida Contraseña \n 4. Salir');
+		}
+	</script>
+</body>
+</html>

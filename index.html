@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Ejemplo1</title>
+</head>
+<body>
+	<script src="js/main.js"></script>
+	<button type="button" onclick="document.write('sorpresa')">Hola
+	</button><br>
+
+	<p id='demo'>Hello</p>
+	<button onclick="unaFuncion()">PULSA ACÁ
+	</button>
+	<script>
+		function unaFuncion() {
+			document.getElementById('demo')
+			.innerHTML = 'sorpresa!!';
+		}
+	</script>
+
+</body>
+</html>

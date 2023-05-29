@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Ejercicio 1.2</title>
+<!--</head>
+2. Diseñar un script que pida un número mayor que cero
+y devuelva la suma de todos los números pares desde 
+cero al número introducido. Mostrará la suma y 
+volverá a pedir otro número hasta que el usuario teclee un 0.-->
+<body>
+	<script type="text/javascript">
+		var num=parseInt(prompt('Introduce un número entero'));
+		while(num!=0){
+			var suma=0;
+			for (var i=2; i<=num; i++) {
+				suma=suma + i;
+				i+=1;
+			}
+			alert(suma);
+			num=parseInt(prompt('Introduce otro número entero','0'));
+		}
+	</script>
+</body>
+</html>
