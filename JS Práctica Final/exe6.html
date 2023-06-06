@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Ejercicio 6</title>
+</head>
+<!--6)	Realiza un formulario de registro en el cual
+ se introduzca los siguientes datos Nombre, Apellido,
+  Edad e Email respetando las validaciones -->
+<style type="text/css">
+	label{
+		display: block;
+	}
+	input{
+		display: block;
+		margin-left: 100px;
+	}
+	button{
+		display: inline-block;
+		width: 80px;
+		margin-left: 50px;
+	}
+</style>
+<body>
+	<h2>Ejercicio 6</h2>
+	<div>
+		<h2>FORMULARIO DE REGISTRO</h2>
+		<form id="registroForm">
+			<label for="name">Nombre</label>
+			<input type="text" name="name" id="name">
+			<br>
+			<label for="lastname">Apellido</label>
+			<input type="text" name="lname" id="lastname">
+			<br>
+			<label for="age">Edad</label>
+			<input type="number" name="age" id="age">
+			<br>
+			<label for="email">Email</label>
+			<input type="email" name="email" id="email">
+			<br>
+			<button type="submit" onclick="check()">Enviar</button>
+			<button type="reset">Limpiar</button>
+		</form>
+	</div>
+</body>
+	<script src="js/exe6.js"></script>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Ejercicio 7</title>
+</head>
+<!--7)	Utilizando JavaScript, validemos este
+ formulario con las siguientes instrucciones:
+a)	El nombre no deberá ser mayor a 20 caracteres,
+b)	Apellidos, no mayor a 40 caracteres,
+c)	El email debe ser válido, es decir solo se aceptan emails válidos 
+(juan@gmail.com, pedro@hotmail.com) de lo contrario deberá mostrar 
+una ventana indicando que el email está mal escrito,
+d)	El campo ASUNTO convertir todo a mayúsculas,
+e)	El mensaje no mayor a 255 caracteres,
+f)	Al Enviar datos mostrar una página “html”, donde muestre los datos ingresados.
+-->
+<style type="text/css">
+	label{
+		display: block;
+	}
+	input{
+		display: block;
+		margin-left: 100px;
+	}
+	textarea{
+		display: block;
+		margin-left: 100px;
+	}
+	button{
+		display: block;
+		width: 200px;
+		margin-left: 50px;
+	}
+</style>
+<body>
+	<h2>Ejercicio 7</h2>
+	<div>
+		<h2>FORMULARIO</h2>
+		<form id="consultaForm" action="exe7_1.html" method="post">
+			<label for="name">Nombre</label>
+			<input type="text" name="name" id="name" placeholder="Escribe tu nombre" >
+			<br>
+			<label for="lastname">Apellido</label>
+			<input type="text" name="lname" id="lastname" placeholder="Primer Apellido">
+			<br>
+			<label for="email">Email</label>
+			<input type="email" name="email" id="email" placeholder="email">
+			<br>
+			<label for="matter">Asunto</label>
+			<input type="text" name="asunto" id="matter" placeholder="Titular de la consulta">
+			<br>
+			<label for="message">Mensaje</label>
+			<textarea id="message" placeholder="Solo se permiten 300 caracteres"></textarea>
+			<br>
+			<button type="submit" onclick="check()">Enviar datos</button>
+		</form>
+	</div>
+</body>
+<script src="js/exe7.js"></script>
+</html>

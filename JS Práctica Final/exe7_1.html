@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Respuestas</title>
+</head>
+<body>
+	<div>
+<script type="text/javascript">
+  document.addEventListener('DOMContentLoaded', function() {
+    var form = document.getElementById('consultaForm');
+
+    form.addEventListener('submit', function(event) {
+      event.preventDefault();
+      var nombre = form.elements['name'].value;
+      var apellido = form.elements['lastname'].value;
+      var email = form.elements['email'].value;
+      var asunto = form.elements['matter'].value;
+      var mensaje =form.elements['message'].value;
+      console.log('Nombre:', nombre);
+      console.log('Apellido:', apellido);
+      console.log('Email:', email);
+      console.log('Asunto:', asunto);
+      console.log('Mensaje:', mensaje);
+    });
+  });
+</script>
+</div>
+</body>
+</html>
