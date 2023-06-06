@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Ejercicio 5</title>
+	<script src="js/exe5.js"></script>
+</head>
+<!--5)	Crea un Array asociativo con los datos de las materias 
+de un estudiante que terminó el primer semestre pero no sabe si 
+aprobará las materias o no, para saber si aprobará o no, 
+necesitará:
+1) Contar con al menos 90% de asistencia (El total de asistencias es 10);
+2) El promedio debe ser mayor a 51.
+3) Debe tener el 70% de prácticas entregadas (3 prácticas en total).
+Solicitar datos (nombre de Materia) y responder si aprueba o no.-->
+<body>
+	<h2>Ejercicio 5</h2>
+	<p>Historial Académico</p>
+	<div>
+		
+	</div>
+	<div style="margin-top: 10px;">
+<script type="text/javascript">
+    var materias = {
+        inf_111: [7, 60, 3],
+        lab_111: [4, 45, 1],
+        inf_112: [8, 67, 2],
+        inf_113: [10, 78, 2],
+        mat_114: [10, 51, 3],
+        mat_115: [1, 90, 2],
+        lin_116: [8, 34, 1],
+    };
+
+    function aprobado() {
+        var mat = prompt('Ingrese la materia que desea conocer si aprobó');
+
+        if (materias.hasOwnProperty(mat)) {
+            var puntajes = materias[mat];
+            var aprobado = false;
+
+            if (puntajes[0] >= 9 && puntajes[1] > 51 && puntajes[2] >= 2) {
+                aprobado = true;
+            }
+
+            if (aprobado) {
+                alert('Usted Aprobó ' + mat);
+            } else {
+                alert('Usted No Aprobó ' + mat);
+            }
+        } else {
+            console.log('No se encontró esa materia');
+        }
+    }
+</script>
+
+	</div>
+	<button onclick="aprobado()">Verificar</button>
+	
+</body>
+</html>

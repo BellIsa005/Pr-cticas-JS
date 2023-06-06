@@ -4,5 +4,6 @@ function promedio() {
 	var num3=parseInt(document.getElementById('number3').value);
 	
 	let result=((num1+num2+num3)/3);
-	document.getElementById('resultado').textContent = 'El promedio es ' + result;
+	document.getElementById('resultado').textContent =
+	 'El promedio es ' + result;
 }

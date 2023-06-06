@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Ejercicio 4</title>
+</head>
+<!--4. Generar n términos de la serie de 
+	Fibonacci (0,1,1,2,3,5,8,13, 21,)-->
+<body>
+	<h2>Ejercicio 4</h2>
+	<p>Serie Fibonacci</p>
+	<div id="resultado" style="margin-top: 10px;">
+		<script type="text/javascript">
+			var n=parseInt(prompt('Cuántos números de la serie Fibonacci desea:'));
+			var contador = 0;
+			var x=-1;
+			var y=0;
+			while (contador < n) {
+	
+				document.write(y + '<br>');
+					var temp = y; 
+					y = -(x)+y;
+					x = -(temp);
+					contador++;
+				}
+		</script>
+	</div>
+</body>
+</html>
