@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Ejercicio 1.3</title>
+</head>
+<!--3. Escribir un script para determinar si el numero 
+	introducido por el usuario es un palíndromo, es decir, 
+	un número que se lee igual del derecho que del revés. 
+	Si es palíndromo lo mostrará en una ventana alert.-->
+<body>
+	<script type="text/javascript">
+		var numero = prompt("Introduce un número");
+
+if (esPalindromo(numero)) {
+  alert(numero + " es un número palíndromo");
+} else {
+  alert(numero + " no es un número palíndromo");
+}
+
+function esPalindromo(numero) {
+  // Convertir el número a una cadena de texto
+  var cadena = numero.toString();
+
+  // Obtener la longitud de la cadena
+  var longitud = cadena.length;
+
+  // Recorrer la mitad de la cadena
+  for (var i = 0; i < longitud / 2; i++) {
+    // Comparar el caracter de la posición i con su correspondiente al revés
+    if (cadena[i] !== cadena[longitud - 1 - i]) {
+      // Si los caracteres son diferentes, no es un palíndromo
+      return false;
+    }
+  }
+
+  // Si todos los caracteres coinciden, es un palíndromo
+  return true;
+}
+
+	</script>
+</body>
+</html>
